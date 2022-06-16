@@ -1,0 +1,19 @@
+{
+  "name": "documentation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:MarionetkaX/document-vuepress.git",
+  "author": "MarionetkaX <sergey07061999@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:build": "vuepress build --clean-cache",
+    "docs:clean": "rimraf .vuepress/.temp .vuepress/.cache .vuepress/dist",
+    "docs:dev": "vuepress dev --clean-cache"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.48"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
