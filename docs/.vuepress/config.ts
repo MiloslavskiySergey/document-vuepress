@@ -1,6 +1,8 @@
 //import { defineUserConfig } from 'vuepress'
-import { defineUserConfig } from '@vuepress/cli'
+import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from '@vuepress/theme-default'
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+import { path } from '@vuepress/utils'
 import { navbar, sidebar } from './configs'
 
 export default defineUserConfig({
@@ -29,5 +31,11 @@ export default defineUserConfig({
       }
     }
 
-  })
+  }),
+
+  plugins: [
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, './components')
+    })
+  ]
 })

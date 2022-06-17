@@ -60,7 +60,7 @@ Options set by CLI will override those options with the same name in your config
 
 ## build
 
-Build your VuePress site to static files, which are ready for [deployment](../guide/deployment.md).
+Build your VuePress site to static files, which are ready for
 
 ```bash
 Usage:
