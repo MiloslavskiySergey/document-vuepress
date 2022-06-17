@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: node
+    directory: "/docs"
+    schedule:
+      interval: daily
+      time: "02:00"
+    target-branch: main
+    open-pull-requests-limit: 10
