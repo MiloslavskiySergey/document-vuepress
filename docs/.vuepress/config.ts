@@ -10,7 +10,7 @@ export default defineUserConfig({
   // title: 'Documentation',
   // description: 'Just playing around',
   // base: '/document-vuepress/'
-  base: '/',
+  base: '/document-vuepress/',
 
   locales: {
     '/': {
