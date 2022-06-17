@@ -3,7 +3,7 @@ import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from '@vuepress/theme-default'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import { path } from '@vuepress/utils'
-import { navbar, sidebar } from './configs'
+import { navbarEn, sidebarEn, navbarRu, sidebarRu } from './configs'
 
 export default defineUserConfig({
   // lang: 'en-US',
@@ -14,10 +14,15 @@ export default defineUserConfig({
 
   locales: {
     '/': {
-            lang: 'en-US',
-            title: 'Documentation',
-            description: 'Just playing around',
-    }
+      lang: 'ru-RU',
+      title: 'Документация',
+      description: 'Обычная документация',
+    },
+    '/en/': {
+      lang: 'en-US',
+      title: 'Documentation',
+      description: 'Just playing around',
+},
   },
 
   theme: defaultTheme({
@@ -26,8 +31,16 @@ export default defineUserConfig({
 
     locales: {
       '/': {
-        navbar: navbar,
-        sidebar: sidebar
+        navbar: navbarRu,
+        selectLanguageName: 'RU',
+        selectLanguageText: 'Язык',
+        selectLanguageAriaLabel: 'Язык',
+        sidebar: sidebarRu
+      },
+      '/en/': {
+        navbar: navbarEn,
+        selectLanguageName: 'EN',
+        sidebar: sidebarEn
       }
     }
 

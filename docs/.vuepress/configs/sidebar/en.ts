@@ -1,11 +1,11 @@
 import type { SidebarConfig } from '@vuepress/theme-default'
 
-export const sidebar: SidebarConfig = {
+export const sidebarEn: SidebarConfig = {
     '/guide/': [
         {
             text: 'Guide',
             children: [
-                '/guide/README.md'
+                '/en/guide/README.md'
             ]
         }
     ],
@@ -13,8 +13,8 @@ export const sidebar: SidebarConfig = {
         {
             text: 'Section1',
             children: [
-                '/section1/sec1.md',
-                '/section1/sec2.md'
+                '/en/section1/sec1.md',
+                '/en/section1/sec2.md'
             ]
         }
     ],
@@ -23,8 +23,8 @@ export const sidebar: SidebarConfig = {
             text: 'Section2',
             collapsible: true,
             children: [
-                '/section2/sec1.md',
-                '/section2/sec2.md'
+                '/en/section2/sec1.md',
+                '/en/section2/sec2.md'
             ]
         }
     ]

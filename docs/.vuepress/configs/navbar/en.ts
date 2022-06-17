@@ -1,9 +1,9 @@
 import type { NavbarConfig } from '@vuepress/theme-default'
 
-export const navbar: NavbarConfig = [
+export const navbarEn: NavbarConfig = [
     {
         text: 'Guide',
-        link: '/guide/'
+        link: '/en/guide/'
     },
     {
         text: 'Section',
@@ -11,15 +11,15 @@ export const navbar: NavbarConfig = [
             {
                 text: 'section1',
                 children: [
-                    '/section1/sec1.md',
-                    '/section1/sec2.md'
+                    '/en/section1/sec1.md',
+                    '/en/section1/sec2.md'
                 ]
             },
             {
                 text: 'section2',
                 children: [
-                    '/section2/sec1.md',
-                    '/section2/sec2.md'
+                    '/en/section2/sec1.md',
+                    '/en/section2/sec2.md'
                 ]
             }
         ]
