@@ -10,7 +10,7 @@ export default defineUserConfig({
   // title: 'Documentation',
   // description: 'Just playing around',
   // base: '/document-vuepress/'
-  base: '/',
+  base: '/document-vuepress/',
 
   locales: {
     '/': {
@@ -21,8 +21,8 @@ export default defineUserConfig({
   },
 
   theme: defaultTheme({
-    repo: 'MarionetkaX/document-vuepress/',
-    docsDir: '/',
+    repo: 'MarionetkaX/document-vuepress',
+    docsDir: '/docs',
 
     locales: {
       '/': {

@@ -36,13 +36,11 @@ jobs:
 
       # install dependencies if the cache did not hit
       - name: Install dependencies
-        working-directory: ./docs
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn --frozen-lockfile
 
       # run build script
       - name: Build VuePress site
-        working-directory: ./docs
         run: yarn docs:build
 
       # please check out the docs of the workflow for more details
