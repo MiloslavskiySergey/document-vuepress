@@ -21,7 +21,7 @@ export default defineUserConfig({
   },
 
   theme: defaultTheme({
-    repo: 'MarionetkaX/document-vuepress',
+    repo: '/document-vuepress/',
     docsDir: '/',
 
     locales: {
